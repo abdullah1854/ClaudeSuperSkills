@@ -1,0 +1,35 @@
+{
+  "name": "hooks-guide",
+  "description": "Claude Code hooks implementation guide. Auto-formatting, permission handling, session context, and skill activation patterns. Use when: setting up automation, configuring permissions, implementing hooks.",
+  "version": "1.0.0",
+  "category": "devops",
+  "inputs": [
+    {
+      "name": "hookType",
+      "type": "string",
+      "description": "Hook type: PreToolUse, PostToolUse, PermissionRequest, SessionStart, Stop, UserPromptSubmit",
+      "required": true
+    },
+    {
+      "name": "purpose",
+      "type": "string",
+      "description": "What the hook should accomplish",
+      "required": false
+    }
+  ],
+  "tags": [
+    "hooks",
+    "automation",
+    "permissions",
+    "formatting",
+    "claude-code"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Identify hook trigger point. 2. Define matcher pattern. 3. Implement hook command. 4. Configure in settings.json. 5. Test hook behavior.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/hooks-guide",
+  "createdAt": "2025-12-22T16:34:29.958Z",
+  "updatedAt": "2025-12-22T16:34:29.958Z"
+}

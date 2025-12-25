@@ -1,0 +1,26 @@
+{
+  "name": "context-fundamentals",
+  "description": "Understand context components, mechanics, and constraints in agent systems. Guides on system prompts, tool definitions, message history, retrieval, and attention mechanics.",
+  "version": "1.0.0",
+  "category": "documentation",
+  "inputs": [
+    {
+      "name": "topic",
+      "type": "string",
+      "description": "Topic: anatomy, attention, quality, disclosure, budgeting",
+      "required": false
+    }
+  ],
+  "tags": [
+    "context",
+    "engineering",
+    "fundamentals",
+    "agents"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:43:11.750Z",
+  "updatedAt": "2025-12-22T02:43:11.750Z"
+}

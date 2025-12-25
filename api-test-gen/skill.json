@@ -1,0 +1,38 @@
+{
+  "name": "api-test-gen",
+  "description": "Generates API test templates for Jest/Supertest or Pytest with authentication handling.",
+  "version": "1.0.0",
+  "category": "testing",
+  "inputs": [
+    {
+      "name": "endpoint",
+      "type": "string",
+      "description": "API endpoint path",
+      "required": true
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "description": "HTTP method: GET, POST, PUT, DELETE",
+      "required": false
+    },
+    {
+      "name": "framework",
+      "type": "string",
+      "description": "Test framework: jest or pytest",
+      "required": false
+    }
+  ],
+  "tags": [
+    "api",
+    "testing",
+    "jest",
+    "pytest"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:36:14.260Z",
+  "updatedAt": "2025-12-22T02:36:14.260Z"
+}

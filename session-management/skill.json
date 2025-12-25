@@ -1,0 +1,41 @@
+{
+  "name": "session-management",
+  "description": "6-phase workflow coordination for session management. Manages context across sessions, implements checkpoint/resume patterns, and tracks progress through complex multi-step tasks. Use when: starting new sessions, resuming work, managing long-running tasks.",
+  "version": "1.0.0",
+  "category": "productivity",
+  "inputs": [
+    {
+      "name": "action",
+      "type": "string",
+      "description": "Action: start, resume, checkpoint, summary, handoff",
+      "required": true
+    },
+    {
+      "name": "sessionId",
+      "type": "string",
+      "description": "Session identifier for tracking",
+      "required": false
+    },
+    {
+      "name": "context",
+      "type": "string",
+      "description": "Current context or summary to persist",
+      "required": false
+    }
+  ],
+  "tags": [
+    "session",
+    "workflow",
+    "context",
+    "coordination",
+    "checkpoint"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Identify current session state (new/existing). 2. For new sessions: scan CLAUDE.md, check git status, identify active tasks. 3. For resume: load last checkpoint, summarize progress, identify next steps. 4. Create checkpoint with: completed items, current state, open items, blockers. 5. For handoff: generate comprehensive summary for next session.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/session-management",
+  "createdAt": "2025-12-22T16:30:23.913Z",
+  "updatedAt": "2025-12-22T16:30:23.913Z"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "analytics-integration",
+  "description": "DataFast and Umami analytics integration. Event tracking, custom metrics, dashboards, and privacy-focused analytics. Use when: adding analytics, tracking events, setting up dashboards.",
+  "version": "1.0.0",
+  "category": "api",
+  "inputs": [
+    {
+      "name": "provider",
+      "type": "string",
+      "description": "Provider: umami, datafast, plausible",
+      "required": true
+    },
+    {
+      "name": "feature",
+      "type": "string",
+      "description": "Feature: setup, events, custom",
+      "required": false
+    }
+  ],
+  "tags": [
+    "analytics",
+    "tracking",
+    "umami",
+    "datafast",
+    "metrics",
+    "privacy"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Select analytics provider. 2. Generate setup code. 3. Add event tracking patterns. 4. Configure custom metrics. 5. Ensure privacy compliance.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/analytics-integration",
+  "createdAt": "2025-12-22T16:31:32.191Z",
+  "updatedAt": "2025-12-22T16:31:32.191Z"
+}

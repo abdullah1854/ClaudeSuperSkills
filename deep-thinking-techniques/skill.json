@@ -1,0 +1,41 @@
+{
+  "name": "deep-thinking-techniques",
+  "description": "Extended reasoning activation with trigger phrases. Enables deeper analysis without model switching. Use when: complex problems, architecture decisions, debugging difficult issues, thorough analysis needed.",
+  "version": "1.0.0",
+  "category": "productivity",
+  "inputs": [
+    {
+      "name": "level",
+      "type": "string",
+      "description": "Level: think, think-hard, ultrathink",
+      "required": false
+    },
+    {
+      "name": "task",
+      "type": "string",
+      "description": "Task requiring deep thinking",
+      "required": true
+    },
+    {
+      "name": "critique",
+      "type": "boolean",
+      "description": "Enable self-critique loop",
+      "required": false
+    }
+  ],
+  "tags": [
+    "thinking",
+    "reasoning",
+    "analysis",
+    "ultrathink",
+    "planning"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Identify complexity level. 2. Select appropriate thinking trigger. 3. Structure problem clearly. 4. Apply extended reasoning. 5. Self-critique if enabled. 6. Synthesize conclusions.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/deep-thinking-techniques",
+  "createdAt": "2025-12-22T16:34:29.793Z",
+  "updatedAt": "2025-12-22T16:34:29.793Z"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "agent-evaluation",
+  "description": "Build evaluation frameworks for agent systems. Multi-dimensional rubrics, LLM-as-judge patterns, test set design, and continuous evaluation.",
+  "version": "1.0.0",
+  "category": "testing",
+  "inputs": [
+    {
+      "name": "aspect",
+      "type": "string",
+      "description": "Aspect: rubrics, methodology, testset, continuous, pitfalls",
+      "required": false
+    }
+  ],
+  "tags": [
+    "evaluation",
+    "testing",
+    "agents",
+    "quality"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:43:12.154Z",
+  "updatedAt": "2025-12-22T02:43:12.154Z"
+}

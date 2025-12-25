@@ -1,0 +1,37 @@
+{
+  "name": "cipher-memory",
+  "description": "Formats messages for Cipher cross-IDE memory persistence with proper projectPath.",
+  "version": "1.0.0",
+  "category": "productivity",
+  "inputs": [
+    {
+      "name": "action",
+      "type": "string",
+      "description": "Action: recall, decision, learning, milestone, blocker",
+      "required": true
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "description": "Content to store/recall",
+      "required": true
+    },
+    {
+      "name": "projectPath",
+      "type": "string",
+      "description": "Full project path",
+      "required": true
+    }
+  ],
+  "tags": [
+    "memory",
+    "cipher",
+    "persistence"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:37:27.324Z",
+  "updatedAt": "2025-12-22T02:37:27.324Z"
+}

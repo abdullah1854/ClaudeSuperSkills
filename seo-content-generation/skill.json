@@ -1,0 +1,42 @@
+{
+  "name": "seo-content-generation",
+  "description": "SERP analysis to publication-ready articles. SEO-optimized content with proper structure, meta tags, and keyword placement. Use when: writing blog posts, creating landing page copy, optimizing content for search.",
+  "version": "1.0.0",
+  "category": "productivity",
+  "inputs": [
+    {
+      "name": "topic",
+      "type": "string",
+      "description": "Main topic or keyword",
+      "required": true
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "description": "Content type: blog, landing, product, comparison",
+      "required": false
+    },
+    {
+      "name": "length",
+      "type": "string",
+      "description": "Length: short (500), medium (1000), long (2000+)",
+      "required": false
+    }
+  ],
+  "tags": [
+    "seo",
+    "content",
+    "writing",
+    "marketing",
+    "serp",
+    "keywords"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Research SERP for target keyword. 2. Analyze competitor content structure. 3. Identify content gaps. 4. Create outline with H2/H3 structure. 5. Write with keyword density 1-2%. 6. Add meta description and title tag.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/seo-content-generation",
+  "createdAt": "2025-12-22T16:32:50.336Z",
+  "updatedAt": "2025-12-22T16:32:50.336Z"
+}

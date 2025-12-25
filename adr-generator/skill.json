@@ -1,0 +1,43 @@
+{
+  "name": "adr-generator",
+  "description": "Generates Architectural Decision Records with context, decision, consequences, and alternatives.",
+  "version": "1.0.0",
+  "category": "documentation",
+  "inputs": [
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Decision title",
+      "required": true
+    },
+    {
+      "name": "context",
+      "type": "string",
+      "description": "Problem context",
+      "required": true
+    },
+    {
+      "name": "decision",
+      "type": "string",
+      "description": "The decision made",
+      "required": true
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Status: PROPOSED, ACCEPTED, DEPRECATED",
+      "required": false
+    }
+  ],
+  "tags": [
+    "adr",
+    "architecture",
+    "documentation"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:37:27.560Z",
+  "updatedAt": "2025-12-22T02:37:27.560Z"
+}

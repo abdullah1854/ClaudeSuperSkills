@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__mcp-gateway__gateway_execute_skill",
+      "mcp__mcp-gateway__gateway_get_skill",
+      "Bash(find:*)"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "documentation-research",
+  "description": "Live library documentation lookup via Context7 API and web research. Fetches current docs for any library/framework. Use when: need current API docs, checking library usage, researching implementation patterns.",
+  "version": "1.0.0",
+  "category": "api",
+  "inputs": [
+    {
+      "name": "library",
+      "type": "string",
+      "description": "Library/framework name (e.g., react, nextjs, stripe)",
+      "required": true
+    },
+    {
+      "name": "topic",
+      "type": "string",
+      "description": "Specific topic or API to research",
+      "required": false
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "description": "Specific version",
+      "required": false
+    }
+  ],
+  "tags": [
+    "documentation",
+    "research",
+    "context7",
+    "api-docs",
+    "libraries"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Identify library and version. 2. Query Context7 or official docs. 3. Extract relevant sections. 4. Summarize key patterns. 5. Provide code examples.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/documentation-research",
+  "createdAt": "2025-12-22T16:31:32.304Z",
+  "updatedAt": "2025-12-22T16:31:32.304Z"
+}

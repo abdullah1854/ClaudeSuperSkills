@@ -1,0 +1,26 @@
+{
+  "name": "context-optimization",
+  "description": "Techniques to extend effective context capacity: compaction, observation masking, KV-cache optimization, and partitioning strategies.",
+  "version": "1.0.0",
+  "category": "documentation",
+  "inputs": [
+    {
+      "name": "technique",
+      "type": "string",
+      "description": "Technique: compaction, masking, caching, partitioning, budget",
+      "required": false
+    }
+  ],
+  "tags": [
+    "context",
+    "optimization",
+    "performance",
+    "tokens"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:43:12.005Z",
+  "updatedAt": "2025-12-22T02:43:12.005Z"
+}

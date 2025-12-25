@@ -1,0 +1,26 @@
+{
+  "name": "tool-design",
+  "description": "Design tools for agent systems. Description engineering, consolidation principle, response formats, error handling, and MCP naming conventions.",
+  "version": "1.0.0",
+  "category": "documentation",
+  "inputs": [
+    {
+      "name": "topic",
+      "type": "string",
+      "description": "Topic: descriptions, consolidation, responses, errors, naming, collection",
+      "required": false
+    }
+  ],
+  "tags": [
+    "tools",
+    "design",
+    "agents",
+    "mcp"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:44:28.752Z",
+  "updatedAt": "2025-12-22T02:44:28.752Z"
+}

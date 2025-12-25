@@ -1,0 +1,32 @@
+{
+  "name": "maximo-helper",
+  "description": "Generates Maximo database queries with mandatory GBE site filtering for work orders, assets, inventory.",
+  "version": "1.0.0",
+  "category": "database",
+  "inputs": [
+    {
+      "name": "table",
+      "type": "string",
+      "description": "Table: WORKORDER, ASSET, INVENTORY, LABOR, LABTRANS",
+      "required": true
+    },
+    {
+      "name": "filter",
+      "type": "string",
+      "description": "Additional WHERE conditions",
+      "required": false
+    }
+  ],
+  "tags": [
+    "maximo",
+    "database",
+    "work-orders",
+    "assets"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:35:19.339Z",
+  "updatedAt": "2025-12-22T02:35:19.339Z"
+}

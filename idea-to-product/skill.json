@@ -1,0 +1,43 @@
+{
+  "name": "idea-to-product",
+  "description": "SaaS validation, go-to-market strategy, and product development framework. Takes ideas from concept to launch. Use when: validating startup ideas, planning product launches, creating MVPs.",
+  "version": "1.0.0",
+  "category": "productivity",
+  "inputs": [
+    {
+      "name": "idea",
+      "type": "string",
+      "description": "Product idea description",
+      "required": true
+    },
+    {
+      "name": "stage",
+      "type": "string",
+      "description": "Stage: validate, build, launch, grow",
+      "required": false
+    },
+    {
+      "name": "market",
+      "type": "string",
+      "description": "Target market/niche",
+      "required": false
+    }
+  ],
+  "tags": [
+    "saas",
+    "startup",
+    "validation",
+    "gtm",
+    "mvp",
+    "product",
+    "strategy"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Validate problem exists. 2. Identify target customer. 3. Define MVP scope. 4. Plan go-to-market. 5. Set success metrics. 6. Create launch timeline.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/idea-to-product",
+  "createdAt": "2025-12-22T16:32:50.541Z",
+  "updatedAt": "2025-12-22T16:32:50.541Z"
+}

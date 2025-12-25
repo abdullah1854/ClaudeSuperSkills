@@ -1,0 +1,31 @@
+{
+  "name": "chrome-data-extract",
+  "description": "Generates JavaScript snippets for browser automation data extraction from tables, forms, lists.",
+  "version": "1.0.0",
+  "category": "productivity",
+  "inputs": [
+    {
+      "name": "type",
+      "type": "string",
+      "description": "Extraction type: table, form, list",
+      "required": true
+    },
+    {
+      "name": "selector",
+      "type": "string",
+      "description": "CSS selector",
+      "required": false
+    }
+  ],
+  "tags": [
+    "browser",
+    "automation",
+    "extraction"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:37:27.182Z",
+  "updatedAt": "2025-12-22T02:37:27.182Z"
+}

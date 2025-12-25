@@ -1,0 +1,43 @@
+{
+  "name": "payment-processing",
+  "description": "Integration patterns for Stripe, Polar, and Dodo payment systems. Handles checkout flows, webhooks, subscriptions, and billing. Use when: implementing payments, setting up subscriptions, handling webhooks.",
+  "version": "1.0.0",
+  "category": "api",
+  "inputs": [
+    {
+      "name": "provider",
+      "type": "string",
+      "description": "Provider: stripe, polar, dodo",
+      "required": true
+    },
+    {
+      "name": "feature",
+      "type": "string",
+      "description": "Feature: checkout, webhook, subscription, portal",
+      "required": true
+    },
+    {
+      "name": "framework",
+      "type": "string",
+      "description": "Framework: nextjs, express, fastapi",
+      "required": false
+    }
+  ],
+  "tags": [
+    "payments",
+    "stripe",
+    "subscriptions",
+    "webhooks",
+    "billing",
+    "polar",
+    "dodo"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Identify payment provider. 2. Select integration pattern. 3. Generate secure implementation. 4. Add webhook verification. 5. Include error handling. 6. Add testing guidance.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/payment-processing",
+  "createdAt": "2025-12-22T16:31:32.027Z",
+  "updatedAt": "2025-12-22T16:31:32.027Z"
+}

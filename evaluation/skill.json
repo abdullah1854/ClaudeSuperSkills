@@ -1,0 +1,52 @@
+{
+  "name": "evaluation",
+  "description": "Build evaluation frameworks for agent systems. Multi-dimensional rubrics, LLM-as-judge patterns, test set design, and continuous evaluation pipelines.",
+  "version": "1.0.0",
+  "category": "testing",
+  "inputs": [
+    {
+      "name": "topic",
+      "type": "string",
+      "description": "Topic: rubrics, methodology, testset, continuous, pitfalls, 95-finding, degradation",
+      "required": false
+    }
+  ],
+  "tags": [
+    "evaluation",
+    "testing",
+    "agents",
+    "quality",
+    "rubrics",
+    "monitoring"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [
+    "Always define pass/fail thresholds before evaluating",
+    "Use multi-dimensional rubrics, never single metrics",
+    "Evaluate outcomes not specific execution paths",
+    "Test with realistic context sizes, not unlimited"
+  ],
+  "verificationChecklist": [
+    "Rubric covers all relevant quality dimensions",
+    "Test set spans complexity levels (simple to very complex)",
+    "Baseline metrics established before changes",
+    "Human review supplements automated evaluation"
+  ],
+  "examples": [
+    {
+      "input": {
+        "topic": "rubrics"
+      },
+      "description": "Get guidance on designing multi-dimensional evaluation rubrics"
+    },
+    {
+      "input": {
+        "topic": "95-finding"
+      },
+      "description": "Learn about the 95% performance variance finding from BrowseComp"
+    }
+  ],
+  "source": "workspace",
+  "createdAt": "2025-12-20T00:00:00.000Z",
+  "updatedAt": "2025-12-22T00:00:00.000Z"
+}

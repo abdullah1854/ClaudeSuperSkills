@@ -1,0 +1,32 @@
+{
+  "name": "fabric-helper",
+  "description": "Generates Microsoft Fabric Lakehouse and Warehouse queries with Delta Lake and Spark SQL.",
+  "version": "1.0.0",
+  "category": "database",
+  "inputs": [
+    {
+      "name": "operation",
+      "type": "string",
+      "description": "Operation: read, write, merge, optimize",
+      "required": true
+    },
+    {
+      "name": "table",
+      "type": "string",
+      "description": "Table name",
+      "required": true
+    }
+  ],
+  "tags": [
+    "fabric",
+    "delta",
+    "spark",
+    "lakehouse"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:37:27.056Z",
+  "updatedAt": "2025-12-22T02:37:27.056Z"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "dockerfile-generator",
+  "description": "Generates optimized multi-stage Dockerfiles for Node.js, Python, and Go applications.",
+  "version": "1.0.0",
+  "category": "devops",
+  "inputs": [
+    {
+      "name": "language",
+      "type": "string",
+      "description": "Language: node, python, go, nextjs",
+      "required": true
+    },
+    {
+      "name": "port",
+      "type": "number",
+      "description": "Application port",
+      "required": false
+    }
+  ],
+  "tags": [
+    "docker",
+    "devops",
+    "containers"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:36:14.753Z",
+  "updatedAt": "2025-12-22T02:36:14.753Z"
+}

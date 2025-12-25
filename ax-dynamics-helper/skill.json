@@ -1,0 +1,32 @@
+{
+  "name": "ax-dynamics-helper",
+  "description": "Generates Dynamics AX queries with DATAAREAID filtering for sales, purchasing, inventory.",
+  "version": "1.0.0",
+  "category": "database",
+  "inputs": [
+    {
+      "name": "table",
+      "type": "string",
+      "description": "Table: SALESTABLE, SALESLINE, PURCHTABLE, INVENTTABLE, CUSTTABLE",
+      "required": true
+    },
+    {
+      "name": "dataareaid",
+      "type": "string",
+      "description": "Company code (default: GBE)",
+      "required": false
+    }
+  ],
+  "tags": [
+    "dynamics",
+    "ax",
+    "erp",
+    "database"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:35:19.456Z",
+  "updatedAt": "2025-12-22T02:35:19.456Z"
+}

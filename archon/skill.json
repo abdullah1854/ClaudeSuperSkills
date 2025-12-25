@@ -1,0 +1,42 @@
+{
+  "name": "archon",
+  "description": "Visual Kanban board integration with RAG (Retrieval Augmented Generation). Project management with AI-powered context retrieval. Use when: managing tasks visually, integrating project boards, building RAG systems.",
+  "version": "1.0.0",
+  "category": "productivity",
+  "inputs": [
+    {
+      "name": "action",
+      "type": "string",
+      "description": "Action: create-board, add-task, query, sync",
+      "required": true
+    },
+    {
+      "name": "context",
+      "type": "string",
+      "description": "Context for RAG queries or task details",
+      "required": false
+    },
+    {
+      "name": "board",
+      "type": "string",
+      "description": "Board name",
+      "required": false
+    }
+  ],
+  "tags": [
+    "kanban",
+    "rag",
+    "project-management",
+    "tasks",
+    "retrieval",
+    "boards"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Initialize board structure. 2. Connect to knowledge base. 3. Enable RAG for smart suggestions. 4. Track task progress. 5. Generate insights from history.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/archon",
+  "createdAt": "2025-12-22T16:34:29.505Z",
+  "updatedAt": "2025-12-22T16:34:29.505Z"
+}

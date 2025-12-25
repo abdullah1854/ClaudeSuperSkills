@@ -1,0 +1,77 @@
+{
+  "name": "d365fo-debugging",
+  "description": "Complete D365 Finance & Operations debugging framework. Routes symptoms to correct playbook (Finance, SCM, WMS, Batch, Security, Integration, Performance, Reporting). Activates for D365, Dynamics, AX, voucher, posting, batch job, SSRS, DMF, work order, wave, security, can't post, missing, wrong amount, slow, stuck.",
+  "version": "6.0.0",
+  "category": "domain-specific",
+  "inputs": [
+    {
+      "name": "businessKey",
+      "type": "string",
+      "description": "Document/record ID (SO number, PO, Invoice, Voucher, WorkId, etc.)",
+      "required": false
+    },
+    {
+      "name": "symptom",
+      "type": "string",
+      "description": "What's wrong (missing, wrong amount, can't post, slow, etc.)",
+      "required": false
+    },
+    {
+      "name": "legalEntity",
+      "type": "string",
+      "description": "Legal entity / DATAAREAID (e.g., GBE)",
+      "required": false
+    }
+  ],
+  "tags": [
+    "d365",
+    "dynamics",
+    "ax",
+    "erp",
+    "debugging",
+    "finance",
+    "scm",
+    "wms",
+    "batch",
+    "security",
+    "integration",
+    "performance",
+    "reporting",
+    "voucher",
+    "posting"
+  ],
+  "mcpDependencies": [
+    {
+      "description": "Execute SQL queries for schema discovery and data inspection",
+      "required": true,
+      "toolPattern": "mssql_*"
+    },
+    {
+      "description": "Search codebase for logic trace",
+      "required": false,
+      "toolPattern": "grep_search"
+    }
+  ],
+  "antiHallucination": [
+    "SCHEMA FIRST: NEVER guess columns. Run SELECT TOP 1 * before any filtered query",
+    "NO HARD-CODED FILTERS: NEVER hard-code DATAAREAID without validation",
+    "PLATINUM RULE: ALWAYS find a WORKING example and DIFF it",
+    "DIAMOND RULE: Check FULL STACK: UI/Form -> Business Logic -> Config -> Batch/Report/Integration",
+    "LINE CONTAMINATION: One bad LINE can override the entire HEADER classification",
+    "STOP CONDITIONS: If not found after 3 queries -> pivot upstream/downstream"
+  ],
+  "verificationChecklist": [
+    "Clarified exact problem (observed vs expected)",
+    "Analyzed FULL STACK: Filter Layer -> Logic Layer -> Configuration (Diamond Rule)",
+    "Traced Configuration Lineage: Header -> Line -> ConfigTable",
+    "Checked for LINE CONTAMINATION: Did a single line force Header classification?",
+    "Verified table has DATAAREAID before applying legal entity filter",
+    "Found WORKING example to compare against (Platinum Rule)",
+    "Diffed bad vs good records - identified field that differs",
+    "Checked Stop Conditions - pivoted if necessary"
+  ],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/d365fo-debugging",
+  "createdAt": "2025-12-22T17:42:57.709Z",
+  "updatedAt": "2025-12-23T09:00:00.000Z"
+}

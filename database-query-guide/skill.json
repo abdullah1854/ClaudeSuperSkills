@@ -1,0 +1,31 @@
+{
+  "name": "database-query-guide",
+  "description": "Routes queries to correct MSSQL servers and provides connection guidance.",
+  "version": "1.0.0",
+  "category": "database",
+  "inputs": [
+    {
+      "name": "database",
+      "type": "string",
+      "description": "Database: maximo, ax, fabric, other",
+      "required": true
+    },
+    {
+      "name": "query",
+      "type": "string",
+      "description": "Query to execute",
+      "required": false
+    }
+  ],
+  "tags": [
+    "database",
+    "mssql",
+    "routing"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:37:27.689Z",
+  "updatedAt": "2025-12-22T02:37:27.689Z"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "codebase-navigation",
+  "description": "Project structure exploration and mapping. Analyzes codebase architecture, identifies patterns, maps dependencies, and creates mental models. Use when: onboarding to new project, understanding architecture, finding relevant code.",
+  "version": "1.0.0",
+  "category": "analysis",
+  "inputs": [
+    {
+      "name": "scope",
+      "type": "string",
+      "description": "Scope: full, directory, file, function",
+      "required": false
+    },
+    {
+      "name": "path",
+      "type": "string",
+      "description": "Path to analyze",
+      "required": false
+    },
+    {
+      "name": "focus",
+      "type": "string",
+      "description": "Focus area: structure, dependencies, patterns, all",
+      "required": false
+    }
+  ],
+  "tags": [
+    "navigation",
+    "exploration",
+    "architecture",
+    "mapping",
+    "structure"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Identify entry points (package.json, main files). 2. Map directory structure and conventions. 3. Identify key patterns (MVC, modules, services). 4. Trace dependency graph. 5. Find configuration files. 6. Document architecture insights.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/codebase-navigation",
+  "createdAt": "2025-12-22T16:30:24.262Z",
+  "updatedAt": "2025-12-22T16:30:24.262Z"
+}

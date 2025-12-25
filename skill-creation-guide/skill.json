@@ -1,0 +1,41 @@
+{
+  "name": "skill-creation-guide",
+  "description": "Complete guide for creating new Claude Code skills. Templates, best practices, and activation patterns. Use when: creating new skills, documenting workflows, packaging expertise.",
+  "version": "1.0.0",
+  "category": "documentation",
+  "inputs": [
+    {
+      "name": "skillName",
+      "type": "string",
+      "description": "Name for the new skill",
+      "required": true
+    },
+    {
+      "name": "purpose",
+      "type": "string",
+      "description": "What the skill should do",
+      "required": true
+    },
+    {
+      "name": "category",
+      "type": "string",
+      "description": "Category: code-quality, git-workflow, database, api, documentation, testing, devops, productivity, analysis",
+      "required": false
+    }
+  ],
+  "tags": [
+    "skills",
+    "templates",
+    "creation",
+    "guide",
+    "best-practices"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Define skill purpose clearly. 2. Identify trigger conditions. 3. Write concise description. 4. Create input parameters. 5. Implement code logic. 6. Test activation.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/skill-creation-guide",
+  "createdAt": "2025-12-22T16:34:29.648Z",
+  "updatedAt": "2025-12-22T16:34:29.648Z"
+}

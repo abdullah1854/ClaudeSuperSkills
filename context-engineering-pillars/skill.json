@@ -1,0 +1,35 @@
+{
+  "name": "context-engineering-pillars",
+  "description": "Six Pillars Framework for context engineering: Agents, Query Augmentation, Retrieval, Prompting, Memory, Tools. Prevents context poisoning, distraction, confusion, and clash. Use when: optimizing context usage, fixing context issues, architecting AI workflows.",
+  "version": "1.0.0",
+  "category": "analysis",
+  "inputs": [
+    {
+      "name": "pillar",
+      "type": "string",
+      "description": "Pillar: agents, query, retrieval, prompting, memory, tools, all",
+      "required": false
+    },
+    {
+      "name": "issue",
+      "type": "string",
+      "description": "Context issue: poisoning, distraction, confusion, clash",
+      "required": false
+    }
+  ],
+  "tags": [
+    "context",
+    "engineering",
+    "pillars",
+    "optimization",
+    "architecture"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Identify context bottleneck. 2. Apply relevant pillar strategy. 3. Prevent failure modes. 4. Optimize context window usage. 5. Monitor for degradation.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/context-engineering-pillars",
+  "createdAt": "2025-12-22T16:35:07.093Z",
+  "updatedAt": "2025-12-22T16:35:07.093Z"
+}

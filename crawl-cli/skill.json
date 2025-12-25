@@ -1,0 +1,42 @@
+{
+  "name": "crawl-cli",
+  "description": "Web crawling with markdown output. Extracts content from websites, handles pagination, and outputs clean markdown. Use when: scraping documentation, extracting content, building datasets.",
+  "version": "1.0.0",
+  "category": "api",
+  "inputs": [
+    {
+      "name": "url",
+      "type": "string",
+      "description": "URL to crawl",
+      "required": true
+    },
+    {
+      "name": "depth",
+      "type": "number",
+      "description": "Crawl depth (1-3)",
+      "required": false
+    },
+    {
+      "name": "output",
+      "type": "string",
+      "description": "Output format: markdown, json, text",
+      "required": false
+    }
+  ],
+  "tags": [
+    "crawl",
+    "scraping",
+    "web",
+    "markdown",
+    "extraction",
+    "cli"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Parse target URL. 2. Respect robots.txt. 3. Extract main content. 4. Convert to markdown. 5. Handle pagination. 6. Output clean result.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/crawl-cli",
+  "createdAt": "2025-12-22T16:32:50.751Z",
+  "updatedAt": "2025-12-22T16:32:50.751Z"
+}

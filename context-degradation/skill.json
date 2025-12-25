@@ -1,0 +1,26 @@
+{
+  "name": "context-degradation",
+  "description": "Recognize and mitigate context degradation patterns: lost-in-middle, poisoning, distraction, confusion, and clash. Includes model-specific thresholds.",
+  "version": "1.0.0",
+  "category": "documentation",
+  "inputs": [
+    {
+      "name": "pattern",
+      "type": "string",
+      "description": "Pattern: lost-in-middle, poisoning, distraction, confusion, clash, thresholds, mitigation",
+      "required": false
+    }
+  ],
+  "tags": [
+    "context",
+    "degradation",
+    "debugging",
+    "agents"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:43:11.876Z",
+  "updatedAt": "2025-12-22T02:43:11.876Z"
+}

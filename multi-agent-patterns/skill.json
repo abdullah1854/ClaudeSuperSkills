@@ -1,0 +1,26 @@
+{
+  "name": "multi-agent-patterns",
+  "description": "Design multi-agent architectures: supervisor, peer-to-peer, hierarchical patterns. Context isolation, consensus mechanisms, failure modes.",
+  "version": "1.0.0",
+  "category": "documentation",
+  "inputs": [
+    {
+      "name": "pattern",
+      "type": "string",
+      "description": "Pattern: supervisor, swarm, hierarchical, isolation, consensus, failures",
+      "required": false
+    }
+  ],
+  "tags": [
+    "multi-agent",
+    "architecture",
+    "coordination",
+    "agents"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:44:28.596Z",
+  "updatedAt": "2025-12-22T02:44:28.596Z"
+}

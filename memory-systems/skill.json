@@ -1,0 +1,26 @@
+{
+  "name": "memory-systems",
+  "description": "Design memory architectures for agent systems: vector stores, knowledge graphs, temporal knowledge graphs. Layer patterns and retrieval strategies.",
+  "version": "1.0.0",
+  "category": "documentation",
+  "inputs": [
+    {
+      "name": "topic",
+      "type": "string",
+      "description": "Topic: architecture, layers, patterns, retrieval, consolidation",
+      "required": false
+    }
+  ],
+  "tags": [
+    "memory",
+    "agents",
+    "knowledge-graph",
+    "persistence"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:44:28.429Z",
+  "updatedAt": "2025-12-22T02:44:28.429Z"
+}

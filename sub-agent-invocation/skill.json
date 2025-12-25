@@ -1,0 +1,47 @@
+{
+  "name": "sub-agent-invocation",
+  "description": "Constitutional delegation protocol for invoking specialized sub-agents. Routes tasks to appropriate specialists (code, research, design, testing) with proper context isolation. Use when: complex tasks need parallel work, specialized expertise required, context isolation needed.",
+  "version": "1.0.0",
+  "category": "productivity",
+  "inputs": [
+    {
+      "name": "task",
+      "type": "string",
+      "description": "Task to delegate to sub-agent",
+      "required": true
+    },
+    {
+      "name": "agentType",
+      "type": "string",
+      "description": "Agent type: code, research, design, test, explore, plan",
+      "required": true
+    },
+    {
+      "name": "context",
+      "type": "string",
+      "description": "Context to pass to sub-agent",
+      "required": false
+    },
+    {
+      "name": "isolated",
+      "type": "boolean",
+      "description": "Run in isolated context to prevent pollution",
+      "required": false
+    }
+  ],
+  "tags": [
+    "agents",
+    "delegation",
+    "routing",
+    "parallel",
+    "specialists"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Analyze task requirements. 2. Select appropriate agent type. 3. Prepare context package (minimal but sufficient). 4. Define success criteria. 5. Invoke with isolation if needed. 6. Collect and validate results.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/sub-agent-invocation",
+  "createdAt": "2025-12-22T16:30:24.080Z",
+  "updatedAt": "2025-12-22T16:30:24.080Z"
+}

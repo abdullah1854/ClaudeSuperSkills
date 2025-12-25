@@ -1,0 +1,25 @@
+{
+  "name": "project-scaffold",
+  "description": "Generates project structure templates for Next.js, Express, and FastAPI applications.",
+  "version": "1.0.0",
+  "category": "devops",
+  "inputs": [
+    {
+      "name": "framework",
+      "type": "string",
+      "description": "Framework: nextjs, express, fastapi",
+      "required": true
+    }
+  ],
+  "tags": [
+    "scaffold",
+    "project",
+    "template"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:37:26.801Z",
+  "updatedAt": "2025-12-22T02:37:26.801Z"
+}

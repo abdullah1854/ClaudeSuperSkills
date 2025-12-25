@@ -1,0 +1,43 @@
+{
+  "name": "infra-ops",
+  "description": "VPS setup, SSH configuration, Docker deployment, Coolify, and security hardening. Complete infrastructure operations toolkit. Use when: deploying applications, setting up servers, configuring security, managing containers.",
+  "version": "1.0.0",
+  "category": "devops",
+  "inputs": [
+    {
+      "name": "operation",
+      "type": "string",
+      "description": "Operation: setup, deploy, secure, docker, ssh, coolify",
+      "required": true
+    },
+    {
+      "name": "target",
+      "type": "string",
+      "description": "Target server/service",
+      "required": false
+    },
+    {
+      "name": "config",
+      "type": "object",
+      "description": "Configuration options",
+      "required": false
+    }
+  ],
+  "tags": [
+    "infrastructure",
+    "vps",
+    "docker",
+    "ssh",
+    "security",
+    "deployment",
+    "coolify"
+  ],
+  "mcpDependencies": [],
+  "chainOfThought": "1. Identify operation type. 2. Check prerequisites (SSH access, Docker installed). 3. Prepare configuration. 4. Execute with proper error handling. 5. Verify deployment. 6. Document changes.",
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/infra-ops",
+  "createdAt": "2025-12-22T16:31:31.813Z",
+  "updatedAt": "2025-12-22T16:31:31.813Z"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "refactor-suggest",
+  "description": "Identifies code smells and suggests refactoring patterns like extract method, decompose conditional.",
+  "version": "1.0.0",
+  "category": "code-quality",
+  "inputs": [
+    {
+      "name": "smell",
+      "type": "string",
+      "description": "Code smell: long_function, deep_nesting, long_params, duplicate_code",
+      "required": true
+    }
+  ],
+  "tags": [
+    "refactoring",
+    "code-quality",
+    "patterns"
+  ],
+  "mcpDependencies": [],
+  "antiHallucination": [],
+  "verificationChecklist": [],
+  "source": "workspace",
+  "createdAt": "2025-12-22T02:37:26.940Z",
+  "updatedAt": "2025-12-22T02:37:26.940Z"
+}
