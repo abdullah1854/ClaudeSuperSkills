@@ -16,7 +16,7 @@ None specified
 
 ## Inputs
 - `table` (string) (required): Table: SALESTABLE, SALESLINE, PURCHTABLE, INVENTTABLE, CUSTTABLE
-- `dataareaid` (string) (optional): Company code (default: GBE)
+- `dataareaid` (string) (optional): Company code (default: YOUR_COMPANY)
 
 
 
@@ -46,7 +46,7 @@ gateway_execute_skill({ name: "ax-dynamics-helper", inputs: { ... } })
 
 ```typescript
 
-const { table, dataareaid = 'GBE' } = inputs;
+const { table, dataareaid = 'YOUR_COMPANY' } = inputs;
 
 const schemas = {
   SALESTABLE: ['SALESID', 'CUSTACCOUNT', 'SALESSTATUS', 'CREATEDDATE', 'CURRENCYCODE'],

@@ -1,5 +1,5 @@
 
-const { table, dataareaid = 'GBE' } = inputs;
+const { table, dataareaid = 'YOUR_COMPANY' } = inputs;
 
 const schemas = {
   SALESTABLE: ['SALESID', 'CUSTACCOUNT', 'SALESSTATUS', 'CREATEDDATE', 'CURRENCYCODE'],

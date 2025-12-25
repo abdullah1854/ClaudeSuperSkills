@@ -2,18 +2,18 @@
 
 ## Server Overview
 
-### mssql-prod (Production Multi-Database Server)
+### db-prod (Production Multi-Database Server)
 
 **Purpose**: Primary production server hosting Maximo, AX, and Commission databases
 
 **Databases**:
-- `MAXDB76` - Maximo Asset Management
-- `AX_GB_LIVE_60` - Microsoft Dynamics AX ERP
-- `COMMISSION` - Commission processing
+- `MAXIMO_DB` - Maximo Asset Management
+- `AX_LIVE_DB` - Microsoft Dynamics AX ERP
+- `COMMISSION_DB` - Commission processing
 
 **Access Pattern**:
 ```sql
-USE MAXDB76;
+USE MAXIMO_DB;
 -- Query here
 ```
 
@@ -22,7 +22,7 @@ USE MAXDB76;
 - Apply site/entity filters
 - Use TOP N for large tables
 
-### mssql-crm-dev (CRM Development)
+### db-crm-dev (CRM Development)
 
 **Purpose**: CRM development and testing environment
 
@@ -33,7 +33,7 @@ USE MAXDB76;
 - Data may differ from production
 - Full read/write access
 
-### mssql-crm-prod (CRM Production)
+### db-crm-prod (CRM Production)
 
 **Purpose**: Production CRM data
 
@@ -44,7 +44,7 @@ USE MAXDB76;
 - No INSERT/UPDATE/DELETE operations
 - Production data - handle with care
 
-### mssql-corpforms (Corporate Forms)
+### db-corpforms (Corporate Forms)
 
 **Purpose**: Corporate forms and document management
 
@@ -52,19 +52,19 @@ USE MAXDB76;
 
 ## Common Query Patterns
 
-### Cross-Database Query (mssql-prod)
+### Cross-Database Query (db-prod)
 ```sql
 -- Query across databases on same server
 SELECT m.wonum, a.ITEMID
-FROM MAXDB76.dbo.WORKORDER m
-JOIN AX_GB_LIVE_60.dbo.INVENTTABLE a
+FROM MAXIMO_DB.dbo.WORKORDER m
+JOIN AX_LIVE_DB.dbo.INVENTTABLE a
 ON m.itemnum = a.ITEMID
-WHERE m.siteid = 'GBE' AND a.DATAAREAID = 'GBE';
+WHERE m.siteid = 'YOUR_SITE_ID' AND a.DATAAREAID = 'YOUR_COMPANY';
 ```
 
 ### Schema Discovery
 ```sql
-USE MAXDB76;
+USE MAXIMO_DB;
 -- List all tables
 SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE';
 
@@ -79,7 +79,7 @@ WHERE TABLE_NAME = 'WORKORDER';
 -- Add WITH (NOLOCK) for read-only queries on busy tables
 SELECT TOP 100 *
 FROM WORKORDER WITH (NOLOCK)
-WHERE siteid = 'GBE' AND status = 'COMP';
+WHERE siteid = 'YOUR_SITE_ID' AND status = 'COMP';
 ```
 
 ## Error Handling

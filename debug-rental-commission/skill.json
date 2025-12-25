@@ -1,13 +1,13 @@
 {
-  "name": "debug-gbcr-commission",
-  "description": "Diagnose GBCR commission issues by analyzing agreements, settlements, and voucher types. Detects common issues like FTCNV offsets and script skipping.",
+  "name": "debug-rental-commission",
+  "description": "Diagnose rental commission issues by analyzing agreements, settlements, and voucher types. Detects common issues like credit note offsets and script skipping.",
   "version": "1.0.0",
   "category": "productivity",
   "inputs": [
     {
       "name": "agreementNo",
       "type": "string",
-      "description": "Agreement Number (e.g., CPVL2508201)",
+      "description": "Agreement Number (e.g., AGR-2508201)",
       "required": true
     },
     {

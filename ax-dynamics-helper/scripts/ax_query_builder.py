@@ -66,7 +66,7 @@ AX_TABLES = {
 def build_select_query(
     table: str,
     columns: Optional[list[str]] = None,
-    dataareaid: str = "GBE",
+    dataareaid: str = "YOUR_COMPANY",
     where_clause: Optional[str] = None,
     order_by: Optional[str] = None,
     top: Optional[int] = None
@@ -104,7 +104,7 @@ def build_join_query(
     join_table: str,
     join_columns: list[tuple[str, str]],
     select_columns: Optional[dict[str, list[str]]] = None,
-    dataareaid: str = "GBE",
+    dataareaid: str = "YOUR_COMPANY",
     where_clause: Optional[str] = None
 ) -> str:
     """Build a JOIN query between two AX tables."""
@@ -140,7 +140,7 @@ WHERE {main_alias}.DATAAREAID = '{dataareaid}'"""
     return query
 
 
-def get_sales_order_details(salesid: str, dataareaid: str = "GBE") -> str:
+def get_sales_order_details(salesid: str, dataareaid: str = "YOUR_COMPANY") -> str:
     """Get sales order with line items."""
     return f"""-- Sales Order Details
 SELECT
@@ -163,7 +163,7 @@ WHERE h.DATAAREAID = '{dataareaid}'
 ORDER BY l.LINENUM;"""
 
 
-def get_purchase_order_details(purchid: str, dataareaid: str = "GBE") -> str:
+def get_purchase_order_details(purchid: str, dataareaid: str = "YOUR_COMPANY") -> str:
     """Get purchase order with line items."""
     return f"""-- Purchase Order Details
 SELECT
@@ -186,7 +186,7 @@ WHERE h.DATAAREAID = '{dataareaid}'
 ORDER BY l.LINENUM;"""
 
 
-def get_inventory_on_hand(itemid: Optional[str] = None, dataareaid: str = "GBE") -> str:
+def get_inventory_on_hand(itemid: Optional[str] = None, dataareaid: str = "YOUR_COMPANY") -> str:
     """Get inventory on-hand query."""
     item_filter = f"AND i.ITEMID = '{itemid}'" if itemid else ""
     return f"""-- Inventory On-Hand

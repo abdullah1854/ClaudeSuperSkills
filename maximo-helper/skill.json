@@ -1,6 +1,6 @@
 {
   "name": "maximo-helper",
-  "description": "Generates Maximo database queries with mandatory GBE site filtering for work orders, assets, inventory.",
+  "description": "Generates Maximo database queries with mandatory site filtering for work orders, assets, inventory.",
   "version": "1.0.0",
   "category": "database",
   "inputs": [

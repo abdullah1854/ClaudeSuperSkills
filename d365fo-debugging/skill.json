@@ -19,7 +19,7 @@
     {
       "name": "legalEntity",
       "type": "string",
-      "description": "Legal entity / DATAAREAID (e.g., GBE)",
+      "description": "Legal entity / DATAAREAID (e.g., YOUR_COMPANY)",
       "required": false
     }
   ],
@@ -71,7 +71,6 @@
     "Checked Stop Conditions - pivoted if necessary"
   ],
   "source": "workspace",
-  "sourcePath": "/Users/abdullah/MCP Gateway/workspace/skills/d365fo-debugging",
   "createdAt": "2025-12-22T17:42:57.709Z",
   "updatedAt": "2025-12-23T09:00:00.000Z"
 }

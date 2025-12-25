@@ -48,7 +48,7 @@ Generates concise standup reports from git activity and GitHub PRs. Synthesizes 
 Comprehensive MSSQL server routing and query best practices. Ensures correct server selection and prevents data fabrication.
 
 **Maximo Helper** (`maximo-helper`)
-Maximo database templates for work orders, assets, inventory, and labor. Includes strict GBE site filtering.
+Maximo database templates for work orders, assets, inventory, and labor. Includes mandatory site filtering.
 
 **AX Dynamics Helper** (`ax-dynamics-helper`)
 Dynamics AX templates for ERP data including financials, inventory, sales, and purchasing with DATAAREAID filtering.

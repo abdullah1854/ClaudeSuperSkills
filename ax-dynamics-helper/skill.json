@@ -13,7 +13,7 @@
     {
       "name": "dataareaid",
       "type": "string",
-      "description": "Company code (default: GBE)",
+      "description": "Company code (default: YOUR_COMPANY)",
       "required": false
     }
   ],

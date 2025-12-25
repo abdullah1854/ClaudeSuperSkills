@@ -2,8 +2,8 @@
 const { database, query } = inputs;
 
 const servers = {
-  maximo: { server: 'MAXIMO-PROD', db: 'MAXIMO', note: 'Always filter by SITEID = GBE' },
-  ax: { server: 'AX-PROD', db: 'AX2012', note: 'Always filter by DATAAREAID' },
+  maximo: { server: 'MAXIMO-PROD', db: 'MAXIMO_DB', note: 'Always filter by SITEID = YOUR_SITE_ID' },
+  ax: { server: 'AX-PROD', db: 'AX_LIVE_DB', note: 'Always filter by DATAAREAID' },
   fabric: { server: 'Fabric Lakehouse', db: 'Analytics', note: 'Use Spark SQL or Delta' }
 };
 

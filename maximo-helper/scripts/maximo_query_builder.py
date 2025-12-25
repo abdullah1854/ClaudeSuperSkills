@@ -73,8 +73,8 @@ MAXIMO_TABLES = {
 }
 
 
-# GBE site filter - ALWAYS required
-GBE_FILTER = "SITEID = 'GBE'"
+# Site filter - ALWAYS required (replace YOUR_SITE_ID with your actual site)
+SITE_FILTER = "SITEID = 'YOUR_SITE_ID'"
 
 
 def build_select_query(
@@ -106,7 +106,7 @@ FROM {table_upper}"""
 
     where_parts = []
     if site_filter and "SITEID" in schema["key_columns"]:
-        where_parts.append(GBE_FILTER)
+        where_parts.append(SITE_FILTER)
 
     if where_clause:
         where_parts.append(where_clause)
@@ -165,7 +165,7 @@ WITH AssetHierarchy AS (
         0 as Level
     FROM ASSET
     WHERE ASSETNUM = '{asset_num}'
-        AND {GBE_FILTER}
+        AND {SITE_FILTER}
 
     UNION ALL
 
@@ -177,7 +177,7 @@ WITH AssetHierarchy AS (
         h.Level + 1
     FROM ASSET a
     INNER JOIN AssetHierarchy h ON a.ASSETNUM = h.PARENT
-    WHERE a.{GBE_FILTER}
+    WHERE a.{SITE_FILTER}
 )
 SELECT * FROM AssetHierarchy
 ORDER BY Level;
@@ -196,7 +196,7 @@ SELECT
 FROM LABTRANS lt
 INNER JOIN LABOR l ON lt.LABORCODE = l.LABORCODE
 WHERE lt.REFWO = '{wonum}'
-    AND lt.{GBE_FILTER}
+    AND lt.{SITE_FILTER}
 GROUP BY lt.LABORCODE, l.DISPLAYNAME
 ORDER BY TOTAL_REGULAR_HRS DESC;
 """
@@ -214,7 +214,7 @@ SELECT
 FROM MATUSETRANS mt
 INNER JOIN ITEM i ON mt.ITEMNUM = i.ITEMNUM
 WHERE mt.REFWO = '{wonum}'
-    AND mt.{GBE_FILTER}
+    AND mt.{SITE_FILTER}
 GROUP BY mt.ITEMNUM, i.DESCRIPTION, mt.STORELOC
 ORDER BY TOTAL_COST DESC;
 """
@@ -226,7 +226,7 @@ def get_inventory_levels(
 ) -> str:
     """Get inventory levels."""
 
-    where_parts = [GBE_FILTER]
+    where_parts = [SITE_FILTER]
     if storeloc:
         where_parts.append(f"STORELOC = '{storeloc}'")
     if below_min:
@@ -260,7 +260,7 @@ SELECT
 FROM WOSTATUS ws
 LEFT JOIN PERSON p ON ws.CHANGEBY = p.PERSONID
 WHERE ws.WONUM = '{wonum}'
-    AND ws.{GBE_FILTER}
+    AND ws.{SITE_FILTER}
 ORDER BY ws.CHANGEDATE DESC;
 """
 
@@ -268,7 +268,7 @@ ORDER BY ws.CHANGEDATE DESC;
 def list_tables() -> str:
     """List all known Maximo tables."""
     output = "Available Maximo Tables:\n" + "=" * 50 + "\n"
-    output += f"\n⚠️  IMPORTANT: Always filter by {GBE_FILTER}\n\n"
+    output += f"\n⚠️  IMPORTANT: Always filter by {SITE_FILTER}\n\n"
 
     for table, info in MAXIMO_TABLES.items():
         output += f"\n{table}\n  {info['description']}\n"

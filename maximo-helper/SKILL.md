@@ -1,6 +1,6 @@
 # maximo-helper
 
-Generates Maximo database queries with mandatory GBE site filtering for work orders, assets, inventory.
+Generates Maximo database queries with mandatory site filtering for work orders, assets, inventory.
 
 ## Metadata
 - **Version**: 1.0.0
@@ -47,7 +47,7 @@ gateway_execute_skill({ name: "maximo-helper", inputs: { ... } })
 ```typescript
 
 const { table, filter } = inputs;
-const GBE = "SITEID = 'GBE'";
+const SITE_FILTER = "SITEID = 'YOUR_SITE_ID'";
 
 const schemas = {
   WORKORDER: ['WONUM', 'DESCRIPTION', 'STATUS', 'WORKTYPE', 'REPORTDATE', 'LOCATION', 'ASSETNUM'],
@@ -60,7 +60,7 @@ const schemas = {
 const t = table.toUpperCase();
 const cols = schemas[t] || ['*'];
 
-let query = `SELECT TOP 100\n    ${cols.join(',\n    ')}\nFROM ${t}\nWHERE ${GBE}`;
+let query = `SELECT TOP 100\n    ${cols.join(',\n    ')}\nFROM ${t}\nWHERE ${SITE_FILTER}`;
 
 if (filter) {
   query += `\n  AND ${filter}`;
@@ -68,7 +68,7 @@ if (filter) {
 
 query += ';';
 
-console.log(`-- Maximo Query for ${t}\n-- ⚠️ ALWAYS filter by ${GBE}\n\n${query}`);
+console.log(`-- Maximo Query for ${t}\n-- ⚠️ ALWAYS filter by ${SITE_FILTER}\n\n${query}`);
 
 ```
 

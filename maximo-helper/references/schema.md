@@ -7,7 +7,7 @@ Primary table for maintenance work orders and tasks.
 | Column | Type | Description |
 |--------|------|-------------|
 | wonum | VARCHAR | Work order number (primary key) |
-| siteid | VARCHAR | Site identifier (use 'GBE') |
+| siteid | VARCHAR | Site identifier (use 'YOUR_SITE_ID') |
 | description | VARCHAR | Work order description |
 | status | VARCHAR | Current status (WAPPR, APPR, INPRG, COMP, CLOSE, CAN) |
 | worktype | VARCHAR | Type of work |
@@ -27,7 +27,7 @@ Equipment and vehicle master data.
 | Column | Type | Description |
 |--------|------|-------------|
 | assetnum | VARCHAR | Asset number (primary key) |
-| siteid | VARCHAR | Site identifier (use 'GBE') |
+| siteid | VARCHAR | Site identifier (use 'YOUR_SITE_ID') |
 | description | VARCHAR | Asset description |
 | status | VARCHAR | Asset status |
 | assettype | VARCHAR | Type classification |
@@ -37,9 +37,9 @@ Equipment and vehicle master data.
 | vendor | VARCHAR | Vendor name |
 | purchaseprice | DECIMAL | Purchase price |
 | installdate | DATETIME | Installation date |
-| gb_assetregistrationno | VARCHAR | Vehicle plate number |
-| gb_branch | VARCHAR | Branch location |
-| gb_department | VARCHAR | Department |
+| custom_registrationno | VARCHAR | Vehicle plate number |
+| custom_branch | VARCHAR | Branch location |
+| custom_department | VARCHAR | Department |
 
 ## INVENTORY Table
 

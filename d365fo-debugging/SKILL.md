@@ -126,7 +126,7 @@ SELECT TOP 1 * FROM GeneralJournalEntry;
 **Voucher prefix decoder:**
 | Prefix | Source | Trace To |
 |--------|--------|----------|
-| DDE | Maximo integration | MAXDB..INVOICE |
+| INT | External integration | Staging table |
 | INV | AP Invoice | VendInvoiceJour |
 | PAY | Payment | VendPaymJournalTrans |
 | GJ | GL Journal | LedgerJournalTrans |
@@ -480,7 +480,7 @@ ORDER BY migs.user_seeks * migs.avg_user_impact DESC;
 
 Use these to verify the skill works:
 
-1. **Finance:** "Voucher DDE-123456 exists but amount is wrong"
+1. **Finance:** "Voucher INT-123456 exists but amount is wrong"
 2. **SCM:** "Sales order SO-001234 invoice missing 3 lines"
 3. **WMS:** "Work ID 5678 created but stuck, not releasing"
 4. **Batch:** "Vendor invoice posting batch didn't run last night"
